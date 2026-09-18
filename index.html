@@ -64,10 +64,33 @@
               <div class="phone-head"><span>AUJOURD'HUI</span><strong>Aise</strong></div>
               <p class="phone-greeting">Bonjour.</p>
               <p class="phone-sub">Voici ce qui compte aujourd'hui.</p>
-              <div class="phone-card primary-card"><small>À FAIRE · 10:30</small><strong>Réviser 45 minutes</strong><button type="button" class="mini-action">Fait</button></div>
-              <div class="phone-card secondary-card"><small>REPAS · 12:45</small><strong>Riz + légumes</strong><button type="button" class="mini-action">≈ 742 kcal</button></div>
-              <div class="phone-reminder"><span>SMS</span><div><strong>Rappel activé</strong><small>« Réviser 45 min » à 10:30</small></div><b>ON</b></div>
-              <div class="phone-nav app-bottom-nav" aria-label="Onglets de l'application"><span class="active"><b>⌂</b>Aujourd'hui</span><span><b>◒</b>Calories</span><span><b>✦</b>Décider</span><span><b>◷</b>Rappels</span></div>
+              <div class="phone-preview-panels" aria-live="polite">
+                <div class="phone-preview-panel is-active" data-phone-panel="today">
+                  <div class="phone-card primary-card"><small>À FAIRE · 10:30</small><strong>Réviser 45 minutes</strong><button type="button" class="mini-action">Fait</button></div>
+                  <div class="phone-card secondary-card"><small>REPAS · 12:45</small><strong>Riz + légumes</strong><button type="button" class="mini-action">≈ 742 kcal</button></div>
+                  <div class="phone-reminder"><span>SMS</span><div><strong>Rappel activé</strong><small>« Réviser 45 min » à 10:30</small></div><b>ON</b></div>
+                </div>
+                <div class="phone-preview-panel" data-phone-panel="calories">
+                  <div class="phone-calorie-total"><small>ESTIMATION DU JOUR</small><strong>742</strong><span>kcal</span></div>
+                  <div class="phone-macro"><span>Riz + poulet</span><b>742 kcal</b></div>
+                  <div class="phone-macro"><span>Protéines</span><b>38 g</b></div>
+                </div>
+                <div class="phone-preview-panel" data-phone-panel="decide">
+                  <div class="phone-decision"><small>QUE FAIRE CE SOIR ?</small><strong>Cinéma</strong><p>« J'ai envie de sortir. Le film commence à 20h. »</p><span>PROPOSITION CONTEXTUELLE</span></div>
+                  <div class="phone-option"><b>02</b> Rester à la maison</div>
+                  <div class="phone-option"><b>03</b> Voir des amis</div>
+                </div>
+                <div class="phone-preview-panel" data-phone-panel="reminders">
+                  <div class="phone-sms-card"><small>RAPPEL · 10:30</small><strong>Réviser 45 minutes</strong><span>Notification programmée</span></div>
+                  <div class="phone-sms-card dark"><small>18:30</small><strong>Choisir une sortie</strong><span>Prochain rappel</span></div>
+                </div>
+              </div>
+              <div class="phone-nav app-bottom-nav" aria-label="Onglets de l'application">
+                <button class="active" type="button" data-phone-tab="today"><b>⌂</b><span>Aujourd'hui</span></button>
+                <button type="button" data-phone-tab="calories"><b>◒</b><span>Calories</span></button>
+                <button type="button" data-phone-tab="decide"><b>✦</b><span>Décider</span></button>
+                <button type="button" data-phone-tab="reminders"><b>◷</b><span>Rappels</span></button>
+              </div>
             </div>
           </div>
           <div class="floating-tag tag-top"><b>04</b><span>espaces<br>essentiels</span></div>
